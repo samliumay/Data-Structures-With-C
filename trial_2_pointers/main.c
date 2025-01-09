@@ -3,7 +3,9 @@
 int main(){
 
     int number = 10;
-    int *number2 = 0x7ffec20addb4;
+    int *number2;
+
+    number2 = &number;
 
     printf("The variable is (number): %d \n", number);
     printf("The adress of the variable is (number): %p \n", &number);
